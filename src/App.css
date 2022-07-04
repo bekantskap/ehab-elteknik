@@ -1,38 +1,196 @@
-.App {
-  text-align: center;
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'Merriweather', serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+p {
+  font-family: 'Montserrat', sans-serif;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.app-container__wrapper {
+  background-color: #1f1e1e;
+  /* height: 90vh; */
+  /* display: flex; */
+  /* justify-content: center;
+  align-items: center; */
+}
+
+.app-container__box {
+  width: 100%;
+  /* display: flex; */
+  /* align-items: center; */
+  /* justify-content: center; */
+}
+
+/* NAVBAR */
+
+.nav-navbar {
   display: flex;
-  flex-direction: column;
+  justify-content: space-around;
   align-items: center;
+  background-color: #1f1e1e;
+  height: 10vh;
+  border-bottom: #fde84c38 1px solid;
+}
+
+.nav-navbar__logo {
+  height: 4.5em;
+}
+
+.nav-navbar__links {
+  color: #fde74c;
+  list-style: none;
+  text-decoration: none;
+  line-height: 0;
+}
+
+.nav-navbar__link {
+  transition: 0.5s;
+  transform: translateX(5px);
+}
+.nav-navbar__link:hover {
+  transform: translateX(0);
+  cursor: pointer;
+}
+
+.link {
+  text-decoration: none;
+  color: #fde74c;
+  font-size: 1.2em;
+}
+
+.link:hover {
+  color: #f8f4f9;
+}
+
+/* START PAGE*/
+
+.start-container {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  flex-flow: column wrap;
+}
+.start-content {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 8em;
 }
 
-.App-link {
-  color: #61dafb;
+.start-left__text-box {
+  width: 30em;
+  display: inline-block;
+
+  animation: fadeIn linear 3s;
+  -webkit-animation: fadeIn linear 3s;
+  -moz-animation: fadeIn linear 3s;
+  -o-animation: fadeIn linear 3s;
+  -ms-animation: fadeIn linear 3s;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.start-left__title {
+  font-size: 3em;
+  color: #f8f4f9;
+}
+.start-left__bread {
+  font-size: 1.1em;
+  color: #fde74c;
+}
+
+.start-middle__line-box {
+  padding: 1px;
+}
+
+.start-middle__line {
+  height: 30em;
+  width: 1px;
+  background-color: #fde74c;
+  /* position: absolute; */
+  /* top: 40%;
+  transform: translateY(-48%); */
+}
+
+.start-right__img {
+  height: 25em;
+  opacity: 0.4;
+}
+.start-right__img:hover {
+  opacity: 0.5;
+}
+
+.mirrored {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.start-footer {
+  height: 10em;
+}
+
+/* CONTACT */
+
+.contact-map__box {
+  width: 50%;
+}
+
+.map {
+  height: 400px;
+  width: 100%;
+}
+
+/* ANIMATIONS */
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
   }
-  to {
-    transform: rotate(360deg);
+  100% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
