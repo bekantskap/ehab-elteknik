@@ -1,6 +1,8 @@
-body {
+* {
   margin: 0;
   padding: 0;
+  border: 0;
+  outline: 0;
   box-sizing: border-box;
 }
 
@@ -24,6 +26,14 @@ p {
   align-items: center; */
 }
 
+.dark {
+  background-color: #1f1e1e;
+}
+
+.light {
+  background-color: #f8f4f9;
+}
+
 .app-container__box {
   width: 100%;
   /* display: flex; */
@@ -39,7 +49,7 @@ p {
   align-items: center;
   background-color: #1f1e1e;
   position: fixed;
-  height: 8vh;
+  height: 9vh;
   width: 100vw;
   max-width: 100%;
   z-index: 1;
@@ -60,6 +70,7 @@ p {
 .nav-navbar__link {
   transition: 0.5s;
   transform: translateX(5px);
+  margin: 25px;
 }
 .nav-navbar__link:hover {
   transform: translateX(0);
@@ -74,6 +85,11 @@ p {
 
 .link:hover {
   color: #f8f4f9;
+}
+
+.nav-navbar button {
+  position: absolute;
+  cursor: pointer;
 }
 
 /* START PAGE*/
@@ -192,7 +208,6 @@ p {
     rgba(0, 0, 0, 0.1) 0px 2px 4px 0px,
     rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
   background-color: #3d3d3d;
-
   position: relative;
 }
 
@@ -228,6 +243,52 @@ p {
 }
 
 /* SERVICES END */
+
+/* CONTACT START */
+.contact-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100vh;
+}
+.contact-card {
+  position: relative;
+  width: 40em;
+  height: 40em;
+  margin: 20px;
+}
+.contact-img {
+  width: 100%;
+  opacity: 0.6;
+  position: absolute;
+  border-radius: 50%;
+  left: 0;
+  top: 0;
+}
+.contact-img:hover {
+  opacity: unset;
+}
+
+.contact-text {
+  z-index: 100;
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -75%);
+}
+
+.contact-logo {
+  display: flex;
+  align-items: center;
+  color: #fde74c;
+}
+
+.contact-text p {
+  margin: 5px;
+}
+
+/* CONTACT END */
 
 /* FOOTER */
 

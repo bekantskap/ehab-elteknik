@@ -1,6 +1,17 @@
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
 
 export default function Navbar() {
+  const [darkMode, setDarkMode] = useState(true);
+
+  const changeHandler = () => {
+    if (darkMode) {
+      setDarkMode(false);
+    } else {
+      setDarkMode(true);
+    }
+  };
+
   return (
     // <Router>
     <nav className="nav-navbar">
@@ -28,6 +39,11 @@ export default function Navbar() {
           </Link>
         </li>
       </ul>
+      <button type="button" onClick={() => changeHandler()}>
+        <i
+          className={`fa-solid fa-lightbulb ${darkMode ? 'dark' : 'light'}`}
+        ></i>
+      </button>
     </nav>
     // </Router>
   );

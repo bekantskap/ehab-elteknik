@@ -5,13 +5,18 @@ import Start from './pages/Start';
 import Services from './pages/Services';
 import Contact from './pages/Contact';
 import Footer from './components/Footer';
+import { useState } from 'react';
 
 function App() {
+  const [darkMode, setDarkMode] = useState(true);
+
   return (
     <Router>
       <main className="app-container">
         <Navbar />
-        <div className="app-container__wrapper">
+        <div
+          className={`app-container__wrapper ${darkMode ? 'dark' : 'light'}`}
+        >
           <section className="app-container__box">
             <Routes>
               <Route path="/" element={<Start />}></Route>
