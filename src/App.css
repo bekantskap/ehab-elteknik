@@ -186,22 +186,45 @@ p {
 }
 
 .service-card__content {
-  width: 320px;
-  height: 400px;
+  width: 350px;
+  height: 350px;
   box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px,
     rgba(0, 0, 0, 0.1) 0px 2px 4px 0px,
     rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
   background-color: #3d3d3d;
+
+  position: relative;
 }
 
 .service-card__img {
-  height: 230px;
-  width: 320px;
-  opacity: 0.7;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0.3;
 }
 
 .service-card__text {
-  margin: 5px;
+  z-index: 100;
+  position: absolute;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.service-card__header {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.service-card__desc {
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
 }
 
 /* SERVICES END */
