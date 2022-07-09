@@ -46,6 +46,9 @@ export default function Services() {
           img={'img/security.jpg'}
         />
       </div>
+      <div className="service-info">
+        <h3 className="info-page__btn">Kvalitetsmanual</h3>
+      </div>
     </main>
   );
 }
