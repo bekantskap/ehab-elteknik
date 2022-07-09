@@ -1,14 +1,16 @@
+import { useContext } from 'react';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { SettingsContext } from '../App';
 
 export default function Navbar() {
-  const [darkMode, setDarkMode] = useState(true);
+  const x = useContext(SettingsContext);
 
   const changeHandler = () => {
-    if (darkMode) {
-      setDarkMode(false);
+    if (x.darkMode) {
+      x.setDarkMode(false);
     } else {
-      setDarkMode(true);
+      x.setDarkMode(true);
     }
   };
 
@@ -39,10 +41,12 @@ export default function Navbar() {
           </Link>
         </li>
       </ul>
-      <button type="button" onClick={() => changeHandler()}>
-        <i
-          className={`fa-solid fa-lightbulb ${darkMode ? 'dark' : 'light'}`}
-        ></i>
+      <button
+        className="button-darkmode"
+        type="button"
+        onClick={() => changeHandler()}
+      >
+        <i className="fa-solid fa-lightbulb"></i>
       </button>
     </nav>
     // </Router>
