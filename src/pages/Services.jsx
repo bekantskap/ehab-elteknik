@@ -47,7 +47,9 @@ export default function Services() {
         />
       </div>
       <div className="service-info">
-        <h3 className="info-page__btn">Kvalitetsmanual</h3>
+        <button type="button" className="info-page__btn">
+          Kvalitetsmanual
+        </button>
       </div>
     </main>
   );
