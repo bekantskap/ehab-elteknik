@@ -1,7 +1,7 @@
 export default function Contact() {
   return (
     <main className="contact-container">
-      <h1>Kontakt</h1>
+      <h1 className="contact-header">Kontakt</h1>
       <div className="contact-content">
         <section className="contact-card">
           <img src={'img/classe2.jpg'} alt="classe" className="contact-img" />

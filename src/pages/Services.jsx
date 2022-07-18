@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import ServiceCard from '../components/ServiceCard';
 
 export default function Services() {
@@ -46,11 +47,30 @@ export default function Services() {
           img={'img/security.jpg'}
         />
       </div>
-      <div className="service-info">
-        <button type="button" className="info-page__btn">
-          Kvalitetsmanual
-        </button>
-      </div>
+      <section className="service-info__container">
+        <div className="service-info">
+          <h4 className="service-info__text">
+            Vill du veta mer om vårat företag och våra riktlinjer?
+          </h4>
+          <i className="fa-solid fa-arrow-down"></i>
+          <Link to="/manual">
+            <button type="button" className="service-info__btn">
+              kvalitetsmanual
+            </button>
+          </Link>
+        </div>
+        <div className="service-info">
+          <Link to="/signs">
+            <button type="button" className="service-info__btn">
+              SKyltar
+            </button>
+          </Link>
+          <i className="fa-solid fa-arrow-up"></i>
+          <h4 className="service-info__text">
+            Vill du se exempel på specialbeställda skyltar eller beställa?
+          </h4>
+        </div>
+      </section>
     </main>
   );
 }

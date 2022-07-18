@@ -6,6 +6,8 @@ import Services from './pages/Services';
 import Contact from './pages/Contact';
 import Footer from './components/Footer';
 import React, { createContext, useState } from 'react';
+import Signs from './pages/Signs';
+import Manual from './pages/Manual';
 
 export const SettingsContext = createContext();
 function App() {
@@ -31,6 +33,8 @@ function App() {
                 <Route path="/" element={<Start />}></Route>
                 <Route path="/services" element={<Services />}></Route>
                 <Route path="/contact" element={<Contact />}></Route>
+                <Route path="/signs" element={<Signs />}></Route>
+                <Route path="/manual" element={<Manual />}></Route>
               </Routes>
             </section>
           </div>
