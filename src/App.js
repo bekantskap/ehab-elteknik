@@ -12,12 +12,41 @@ import Manual from './pages/Manual';
 export const SettingsContext = createContext();
 function App() {
   const [darkMode, setDarkMode] = useState(true);
+  const [manualTitle, setManualTitle] = useState('');
+  const [manualDesc, setManualDesc] = useState([
+    {
+      desc: 'Denna kvalitetsmanual riktar sig främst till EHABs kunder och medarbetare och är utformad med bakgrund och ledning av SS EN ISO 9001:2000. Det huvudsakliga syftet är att redogöra för EHABs riktlinjer och värderingar som styr företagets verksamhet.',
+    },
+  ]);
+
+  const [showDesc, setShowDesc] = useState({
+    desc1: true,
+    desc2: false,
+    desc3: false,
+    desc4: false,
+  });
+
   const providerValue = React.useMemo(
     () => ({
       darkMode,
       setDarkMode,
+      manualDesc,
+      setManualDesc,
+      manualTitle,
+      setManualTitle,
+      showDesc,
+      setShowDesc,
     }),
-    [darkMode, setDarkMode]
+    [
+      darkMode,
+      setDarkMode,
+      manualDesc,
+      setManualDesc,
+      manualTitle,
+      setManualTitle,
+      showDesc,
+      setShowDesc,
+    ]
   );
 
   return (

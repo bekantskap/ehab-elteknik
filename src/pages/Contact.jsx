@@ -12,7 +12,7 @@ export default function Contact() {
               <p>07000000</p>
             </div>
             <div className="contact-logo">
-              <i class="fa-solid fa-envelope"></i>
+              <i className="fa-solid fa-envelope"></i>
               <p>info@ehabelteknik</p>
             </div>
           </div>
@@ -26,7 +26,7 @@ export default function Contact() {
               <p>07000000</p>
             </div>
             <div className="contact-logo">
-              <i class="fa-solid fa-envelope"></i>
+              <i className="fa-solid fa-envelope"></i>
               <p>info@ehabelteknik</p>
             </div>
           </div>

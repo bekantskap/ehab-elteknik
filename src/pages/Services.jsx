@@ -47,6 +47,13 @@ export default function Services() {
           img={'img/security.jpg'}
         />
       </div>
+      {/* <section className="service-banner__container">
+        <img
+          className="service-banner__image"
+          src={'img/engraving.jpg'}
+          alt="graveringsmaskin"
+        />
+      </section> */}
       <section className="service-info__container">
         <div className="service-info">
           <h4 className="service-info__text">
