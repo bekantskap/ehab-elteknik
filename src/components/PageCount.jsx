@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useContext } from 'react';
 import { SettingsContext } from '../App';
 
@@ -8,9 +8,9 @@ export default function PageCount(props) {
   const [activePage, setActivePage] = useState(1);
   const descId = props.id + 1;
 
+  //   useEffect(() => {}, [descId]);
+
   const changeHandler = () => {
-    console.log(activePage);
-    console.log(descId);
     setActivePage(descId);
     x.setShowDesc({
       desc1: false,
@@ -34,8 +34,8 @@ export default function PageCount(props) {
 
   return (
     <p
-      onClick={() => changeHandler()}
       className={`page-count ${activePage === descId ? 'active' : ''}`}
+      onClick={() => changeHandler()}
     >
       {descId}
     </p>

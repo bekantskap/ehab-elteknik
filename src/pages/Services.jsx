@@ -1,50 +1,55 @@
+import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import ServiceCard from '../components/ServiceCard';
 
 export default function Services() {
+  // useEffect(() => {
+  //   window.scrollTo(0, 0);
+  // }, []);
+
   return (
     <main className="services-container">
       <h1 className="services-title">VÅRA TJÄNSTER</h1>
       <div className="services-cards">
         <ServiceCard
-          service={'Test'}
+          service={'Industriautomation'}
           desc={'Lorem ipsum testing stuff'}
           img={'img/industryaut.jpg'}
         />
         <ServiceCard
-          service={'Test'}
+          service={'Maskininstallation'}
           desc={'Lorem ipsum testing stuff'}
           img={'img/machine.jpg'}
         />
         <ServiceCard
-          service={'Test'}
+          service={'Programmering'}
           desc={'Lorem ipsum testing stuff'}
           img={'img/programming.jpg'}
         />
         <ServiceCard
-          service={'Test'}
+          service={'Säkerhetssystem'}
           desc={'Lorem ipsum testing stuff'}
           img={'img/security.jpg'}
         />
         <ServiceCard
-          service={'Test'}
+          service={'Komponenter'}
           desc={'Lorem ipsum testing stuff'}
-          img={'img/industryaut.jpg'}
+          img={'img/components.jpg'}
         />
         <ServiceCard
-          service={'Test'}
+          service={'PLC och Motorstyrningar'}
           desc={'Lorem ipsum testing stuff'}
-          img={'img/machine.jpg'}
+          img={'img/plc.jpg'}
         />
         <ServiceCard
-          service={'Test'}
+          service={'Varvtalsreglering'}
           desc={'Lorem ipsum testing stuff'}
-          img={'img/programming.jpg'}
+          img={'img/nicolas-thomas-3GZi6OpSDcY-unsplash.jpg'}
         />
         <ServiceCard
-          service={'Test'}
+          service={'Drifttagning'}
           desc={'Lorem ipsum testing stuff'}
-          img={'img/security.jpg'}
+          img={'img/thisisengineering-raeng-xYCBw1uIP_M-unsplash (1).jpg'}
         />
       </div>
       {/* <section className="service-banner__container">

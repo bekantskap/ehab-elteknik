@@ -1,36 +1,31 @@
+import ContactCard from '../components/ContactCard';
+
 export default function Contact() {
   return (
     <main className="contact-container">
       <h1 className="contact-header">Kontakt</h1>
       <div className="contact-content">
-        <section className="contact-card">
-          <img src={'img/classe2.jpg'} alt="classe" className="contact-img" />
-          <div className="contact-text">
-            <h2 className="contact-name">Claes Mattsson</h2>
-            <div className="contact-logo">
-              <i className="fa-solid fa-phone"></i>
-              <p>07000000</p>
-            </div>
-            <div className="contact-logo">
-              <i className="fa-solid fa-envelope"></i>
-              <p>info@ehabelteknik</p>
-            </div>
-          </div>
-        </section>
-        <section className="contact-card">
-          <img src={'img/anders.jpg'} alt="anders" className="contact-img" />
-          <div className="contact-text">
-            <h2 className="contact-name">Anders Mattsson</h2>
-            <div className="contact-logo">
-              <i className="fa-solid fa-phone"></i>
-              <p>07000000</p>
-            </div>
-            <div className="contact-logo">
-              <i className="fa-solid fa-envelope"></i>
-              <p>info@ehabelteknik</p>
-            </div>
-          </div>
-        </section>
+        <ContactCard
+          img={'img/classe2.jpg'}
+          alt={'classe'}
+          name={'Claes Mattsson'}
+          number={'07000000'}
+          email={'info@ehabelteknik.com'}
+        />
+        <ContactCard
+          img={'img/anders.jpg'}
+          alt={'Anders Mattsson'}
+          name={'Anders Mattsson'}
+          number={'07000000'}
+          email={'info@ehabelteknik.com'}
+        />
+        <ContactCard
+          img={'img/ehabLogga.png'}
+          alt={'ehab logga'}
+          name={'Ehab Elteknik'}
+          number={'033-123456'}
+          email={'info@ehabelteknik.com'}
+        />
       </div>
     </main>
   );

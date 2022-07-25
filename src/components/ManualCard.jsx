@@ -7,8 +7,6 @@ import PageCount from './PageCount';
 export default function ManualCard() {
   const x = useContext(SettingsContext);
 
-  const [test, setTest] = useState(false);
-
   const businessDesc = {
     desc: 'EHAB Elteknik AB utvecklar och producerar elektronikkomponenter till projekt inom automation för flertalet industrier i hela världen, bl.a. shipment, bil- och processindustrin. Vi erbjuder även högkvalitativ teknisk support till våra kunder.',
     desc2:

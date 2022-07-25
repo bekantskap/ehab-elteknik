@@ -141,6 +141,7 @@ p {
   justify-content: center;
   align-items: center;
   flex-flow: column wrap;
+  padding-top: 120px;
 }
 .start-content {
   width: 80%;
@@ -367,13 +368,13 @@ p {
 /* SERVICES END */
 
 /* CONTACT START */
+/* 
 .contact-content {
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
   padding: 2em 0 8em 0;
-  /* height: 100vh; */
 }
 
 .contact-header {
@@ -394,6 +395,7 @@ p {
   opacity: 0.6;
   position: absolute;
   border-radius: 50%;
+  filter: grayscale(70%);
   left: 0;
   top: 0;
 }
@@ -407,6 +409,65 @@ p {
   top: 75%;
   left: 50%;
   transform: translate(-50%, -75%);
+}
+
+.contact-logo {
+  display: flex;
+  align-items: center;
+  color: #fde74c;
+}
+
+.contact-text p {
+  margin: 5px;
+} */
+
+/* CONTACT EXPERIMENT */
+.contact-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* text-align: center; */
+  padding: 2em 0 8em 0;
+  /* height: 100vh; */
+  flex-flow: row wrap;
+}
+
+.contact-header {
+  display: flex;
+  justify-content: center;
+  padding-top: 180px;
+  font-size: 2.5em;
+}
+
+.contact-card {
+  position: relative;
+  background-color: #3d3d3d;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px,
+    rgba(0, 0, 0, 0.1) 0px 2px 4px 0px,
+    rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+  width: 25em;
+  height: 10em;
+  margin: 20px;
+  border-radius: 10px;
+}
+.contact-img {
+  width: 10em;
+  /* opacity: 0.6; */
+  position: absolute;
+  border-radius: 10px;
+  filter: grayscale(70%);
+  right: 10px;
+  top: -10px;
+}
+.contact-img:hover {
+  opacity: unset;
+}
+
+.contact-text {
+  z-index: 1;
+  position: absolute;
+  top: 2.5em;
+  left: 5px;
 }
 
 .contact-logo {
@@ -508,7 +569,7 @@ p {
   content: '';
   width: 5em;
   border-bottom: 1px solid #fde74c;
-  position: abs olute;
+  position: absolute;
   top: 50%;
 }
 :after {
@@ -525,7 +586,6 @@ p {
 .active {
   background-color: #fde74c;
   color: #1f1e1e;
-  /* border: 1px solid #f8f4f9; */
 }
 
 .manual-btns {
@@ -564,6 +624,22 @@ p {
 }
 
 /* MANUAL END */
+
+/* SIGNS START */
+.signs-container {
+  padding: 140px;
+  display: flex;
+  justify-content: center;
+}
+.signs-box {
+  /* width: 70%;
+  margin: 0 auto; */
+}
+.signs-header {
+  text-transform: uppercase;
+}
+
+/* SIGNS END */
 
 /* FOOTER */
 
@@ -676,15 +752,11 @@ p {
 
 @media screen and (max-width: 1300px) {
   .contact-content {
-    flex-direction: column;
+    /* flex-direction: column; */
   }
 }
 
 @media screen and (max-width: 850px) {
-  .contact-card {
-    width: 20em;
-    height: 20em;
-  }
   .footer-content {
     flex-direction: column;
   }
