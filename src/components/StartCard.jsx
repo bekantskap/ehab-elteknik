@@ -1,6 +1,6 @@
 export default function StartCard(props) {
   return (
-    <div className="start-content">
+    <div className={`start-content ${props.mirrored ? "mirrored" : ""}`}>
       <section className="start-left">
         <div className="start-left__text-box">
           <h2 className="start-left__title">{props.title}</h2>
@@ -11,7 +11,7 @@ export default function StartCard(props) {
         <div className="start-middle__line"></div>
       </div>
       <section className="start-right">
-        <img className="start-right__img" src={props.img} alt="kretskort"></img>
+        <img className="start-right__img" src={props.img} alt={props.alt}></img>
       </section>
     </div>
   );
